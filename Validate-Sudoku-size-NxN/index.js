@@ -8,9 +8,8 @@ const Sudoku = function(data) {
                 return data.every((arr, indexY) => {
                     if (arr.length === data.length) {
                         return arr.every((item, indexX) => {
-                            if (item >= 1 && item <= data.length)  {
+                            if (typeof item === 'number' && item >= 1 && item <= data.length)  {
                                 const memoIndex = Math.floor(indexY/squareSize) * squareSize + Math.floor(indexX/squareSize);
-                                console.log(memoIndex);
                                 memo[memoIndex] = Array.isArray(memo[memoIndex])
                                     ? memo[memoIndex]
                                     : [];
