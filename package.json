@@ -5,10 +5,20 @@
   "repository": "git@github.com:maxxgreene/interview-practice.git",
   "author": "Maxx Greene <maxx@nexxtway.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest .",
+    "jest": "jest",
+    "lint": "eslint ."
+  },
   "dependencies": {
+    "eslint": "^8.6.0",
     "jest": "^27.4.7"
   },
-  "scripts": {
-      "test": "jest ."
+  "volta": {
+    "node": "14.17.0",
+    "yarn": "1.22.17"
+  },
+  "devDependencies": {
+    "eslint-plugin-jest": "^25.3.4"
   }
 }
