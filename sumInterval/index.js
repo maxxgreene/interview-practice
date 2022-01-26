@@ -15,8 +15,4 @@ const sumIntervals = (intervals) => {
     }, 0);
 }
 
-
-
-
-
 module.exports = sumIntervals;
